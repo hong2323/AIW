@@ -1,0 +1,348 @@
+
+
+/* Navigation */
+.navigation {
+	position: absolute;
+	width: 100%;
+	padding: 10px 0px;
+	background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
+}
+
+.logo img {max-width: 90px;}
+.primary-nav {padding-right: 50px;}
+.primary-nav li {
+	display: inline-block;
+	margin: 0px 20px;
+	color: white;
+	font-size: 13pt;
+}
+
+.primary-nav a {
+	color: white;
+	padding-bottom: 5px;
+	-webkit-transition: border 50ms linear;
+	-moz-transition: border 50ms linear;
+	-o-transition: border 50ms linear;
+	-ms-transition: border 50ms linear;
+	transition: border 50ms linear;
+}
+.primary-nav a:hover {
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid #F5F5F5;
+}
+
+
+
+/* Main banner */
+.main {
+	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/apple-1838564_1920-main.jpg); /* Browser prefixes*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 14.7% 0; /* Center contents within the container, make background image cover*/
+	color: white;
+}
+
+.entry-banner h1 {font-family: "Source Sans Pro", Arial, sans-serif;}
+#hello {font-size: 28pt;}
+#name {font-size: 100pt;}
+#person-description {font-size: 33pt;}
+.banner-buttons .btn-border, .submit-contact .btn-border, .projects .btn-border {
+	background-color: transparent;
+	width: 100%;
+	margin-top: 40px;
+	color: white;
+	font-family: "Roboto", Helvetica, serif;
+	font-size: 16pt;
+	border-radius: 0;
+	border: 2px solid white;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.banner-buttons .btn-border:hover, .submit-contact .btn-border:hover, .projects .btn-border:hover {
+	border: 2px solid white;
+	background-color: white;
+}
+
+/* About Me */
+.about {
+	padding: 3% 0;
+	background: linear-gradient(rgba(225, 225, 225, 0.94), rgba(225, 225, 225, 0.94)), url(./images/aboutbackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.about-header h1 {
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-size: 34pt;
+}
+
+.about-header-quote {
+	font-family: "Slabo", Helvetica, serif;
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+.about-general-description h2, .about-statistic-description h2 {
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-size: 24pt;
+	margin-bottom: 20px; 
+}
+
+.about-general-description p, .about-statistic-description p {
+	font-family: "Roboto", Helvetica, serif;
+	font-size: 12pt;
+	margin-bottom: 20px;
+}
+
+.about-statistic-description p {margin: 5px 0px;}
+.about-option-buttons .btn-black-border, .resume .btn-black-border {
+	background-color: transparent;
+	width: 100%;
+	margin-top: 40px;
+	color: black;
+	font-family: "Roboto", Helvetica, serif;
+	font-size: 16pt;
+	border-radius: 0;
+	border: 2px solid black;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.about-option-buttons .btn-black-border:hover, .resume .btn-black-border:hover {
+	border: 2px solid #464646;
+	background-color: #464646;
+	color: white;
+}
+
+.summary {
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./images/architecture-2178604_1920-main1.jpg);
+	background-attachment: fixed;
+	background-attachment: center center;
+	color: white;
+	padding: 60px 30px;
+}
+
+.summary .row {
+	padding: 50px 6%;
+	width: 100%;
+}
+
+.summary h3 {font-family: "Source Sans Pro", Arial, sans-serif;}
+.summary p {font-family: "Roboto", Helvetica, serif;}
+
+
+.weather {
+	#app {
+  display: grid;
+  width: 800px;
+  height: 400px;
+  margin: 75px auto;
+  background: #313131;
+  grid-template-columns: 300px 250px 250px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#d1 {
+  background: white no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#d2 {
+  position: relative;
+  background: #2196F3;
+}
+
+#d3 {
+  background: #263238;
+  position: relative;
+}
+
+.icon {
+  width: 250px;
+  height: 200px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  height: 150px;
+  width: 150px;
+}
+
+.description {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.temp {
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.next {
+  font-size: 14px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.list {
+  padding-top: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weekday {
+  font-size: 12px;
+}
+
+.wicon {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.wicon img {
+  width: 36px;
+  height: 36px;
+}
+
+.wtemp {
+  text-align: center;
+  font-size: 12px;
+}
+
+.cities {
+  background: #252525;
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.city {
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.city:hover {
+  background: #0986f3;
+}
+
+.active_city {
+  background: #2196F3;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background: #252525;
+  color: #2196F3;
+  position: fixed;
+  top:  -100%;
+  left: 0;
+  animation: load 5s ease-in-out;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+@keyframes load {
+  0% {top: -100%;}
+  50% {top: 0;}
+  100% {top: 100%;}
+}
+
+}
+
+.contact {
+	background-color: #3A3A3A;
+	padding: 50px 150px;
+	color: white;
+}
+
+.contact h1, .contact h2, .contact h4 {font-family: "Source Sans Pro", Arial, sans-serif;}
+.contact p {font-family: "Roboto", Helvetica, serif;}
+.contact-header-quote {font-style: italic;}
+.contact-header-quote h4 {margin: 5px 0;}
+.contact-instructions, .contact-form-body {
+	margin-top: 50px;
+	padding: 0px 6%;
+}
+
+.email, .message {margin: 15px 0px;}
+.contact input, .contact textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 3px 0px
+}
+
+.submit-contact .btn-border {margin-top: 10px;}
+.footer {
+	background-color: black;
+	color: white;
+	padding: 50px 0;
+	font-family: "Roboto", Helvetica, serif;
+}
+
+.footer h3, .footer h4 {font-family: "Source Sans Pro", Arial, sans-serif;}
+.facebook, .linkedin, .pinterest, .email-icon {padding: 31%;}
+.footer img {
+	background-color: #8A8A8A;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.footer img:hover {background-color: white;}
+.company-information, .home-footer, .portfolio-footer, .resume-footer, .contact-footer {margin-top: 50px;}
+.footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.home-footer a, .portfolio-footer a, .resume-footer a, .contact-footer a {color: white;}
+.home-footer a:hover, .portfolio-footer a:hover, .resume-footer a:hover, .contact-footer a:hover {
+}
